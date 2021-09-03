@@ -1,0 +1,14 @@
+docker-compose run django django-admin startproject core .
+docker-compose up 
+docker-compose down
+  
+docker exec -it django_interview bash
+
+docker exec -it pgdb psql -U postgress
+
+docker build --tag=57331667 --file=./Dockerfile .
+
+RUN pip uninstall django
+RUN pip install djangorestframework
+
+RUN pip install -r requirements.txt
